@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ethan Vera</title>
+<meta name="description" content="Ethan Vera — personal site."/>
+<style>
+  :root{
+    --bg:#05070d; --txt:#e8eefc; --muted:#8da2c9;
+    --accent:#5ad1ff; --accent2:#ffc24d; --border:rgba(120,170,255,0.18);
+  }
+  *{box-sizing:border-box;-webkit-font-smoothing:antialiased}
+  html,body{margin:0;min-height:100%;background:var(--bg);color:var(--txt);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  body{position:relative;overflow-x:hidden}
+  /* cosmic background to match the globe */
+  .sky{position:fixed;inset:0;z-index:-2;background:
+    radial-gradient(1200px 700px at 70% -10%, rgba(90,209,255,0.10), transparent 60%),
+    radial-gradient(900px 600px at 10% 110%, rgba(255,194,77,0.08), transparent 55%),
+    var(--bg);}
+  .stars{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.7}
+  .stars span{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;
+    animation:tw 4s ease-in-out infinite}
+  @keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+  .wrap{max-width:680px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;
+    justify-content:center;padding:48px 24px}
+  .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:18px}
+  h1{margin:0;font-size:clamp(40px,9vw,76px);line-height:1.02;font-weight:700;letter-spacing:-.02em}
+  h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .tag{margin:18px 0 0;font-size:clamp(16px,2.4vw,20px);color:var(--txt);font-weight:500}
+  .bio{margin:20px 0 0;font-size:15.5px;line-height:1.65;color:var(--muted);max-width:560px}
+  .cta{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:14.5px;
+    padding:13px 20px;border-radius:12px;transition:transform .15s,background .15s,border-color .15s,box-shadow .15s}
+  .btn.primary{color:#05070d;background:linear-gradient(90deg,var(--accent),var(--accent2));
+    box-shadow:0 6px 24px rgba(90,209,255,.25)}
+  .btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(90,209,255,.35)}
+  .btn.ghost{color:var(--txt);border:1px solid var(--border);background:rgba(120,170,255,.06)}
+  .btn.ghost:hover{border-color:var(--accent);background:rgba(90,209,255,.12)}
+  .links{margin-top:40px;display:flex;flex-wrap:wrap;gap:22px}
+  .links a{color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:500;
+    border-bottom:1px solid transparent;transition:color .15s,border-color .15s;padding-bottom:2px}
+  .links a:hover{color:var(--accent);border-color:var(--accent)}
+  footer{margin-top:56px;font-size:12px;color:rgba(141,162,201,.6)}
+  @media(max-width:520px){ .wrap{padding:40px 20px} }
+</style>
+</head>
+<body>
+<div class="sky"></div>
+<div class="stars" id="stars"></div>
+
+<main class="wrap">
+  <!-- EDIT: small line above your name -->
+  <div class="kicker">Personal site</div>
+
+  <h1>Ethan <span class="grad">Vera</span></h1>
+
+  <!-- EDIT: your one-line tagline -->
+  <p class="tag">Co&#8209;founder &amp; COO at Luxor &middot; Bitcoin, mining &amp; markets.</p>
+
+  <!-- EDIT: a short intro paragraph -->
+  <p class="bio">Welcome to my corner of the internet. I spend my time building infrastructure
+     for the Bitcoin economy &mdash; and the rest of it on a plane somewhere. Below is a map of
+     everywhere I&rsquo;ve been.</p>
+
+  <div class="cta">
+    <a class="btn primary" href="travel.html">Explore my travel map
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+           stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+  <!-- EDIT: replace # with your real profile links, or delete any you don't want -->
+  <div class="links">
+    <a href="https://luxor.tech" target="_blank" rel="noopener">Luxor</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://x.com/" target="_blank" rel="noopener">X / Twitter</a>
+    <a href="mailto:ethan@luxor.tech">Email</a>
+  </div>
+
+  <footer>&copy; <span id="yr"></span> Ethan Vera</footer>
+</main>
+
+<script>
+  // sprinkle a starfield
+  const s=document.getElementById('stars');let h='';
+  for(let i=0;i<90;i++){const x=Math.random()*100,y=Math.random()*100,d=(Math.random()*4).toFixed(2),
+    sz=(Math.random()*1.6+0.6).toFixed(2);
+    h+=`<span style="left:${x}%;top:${y}%;width:${sz}px;height:${sz}px;animation-delay:${d}s"></span>`;}
+  s.innerHTML=h;
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
