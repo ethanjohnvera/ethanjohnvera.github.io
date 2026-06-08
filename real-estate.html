@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Real Estate — Ethan Vera</title>
+<meta name="description" content="Short-term rental properties in Montevideo, Uruguay."/>
+<style>
+  :root{--bg:#05070d;--txt:#e8eefc;--muted:#8da2c9;--accent:#5ad1ff;--accent2:#ffc24d;
+    --border:rgba(120,170,255,0.18);--card:rgba(13,20,33,0.55);--airbnb:#ff385c}
+  *{box-sizing:border-box;-webkit-font-smoothing:antialiased}
+  html,body{margin:0;min-height:100%;background:var(--bg);color:var(--txt);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  .sky{position:fixed;inset:0;z-index:-1;background:
+    radial-gradient(1100px 650px at 75% -10%, rgba(90,209,255,0.10), transparent 60%),
+    radial-gradient(900px 600px at 5% 110%, rgba(255,194,77,0.08), transparent 55%),var(--bg)}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 24px 80px}
+  a.back{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--muted);
+    text-decoration:none;margin-bottom:34px;transition:color .15s}
+  a.back:hover{color:var(--accent)}
+  .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:14px}
+  h1{margin:0;font-size:clamp(34px,7vw,58px);line-height:1.04;font-weight:700;letter-spacing:-.02em}
+  h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .lede{margin:16px 0 56px;font-size:16px;color:var(--muted);max-width:560px;line-height:1.6}
+  .prop{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;margin:0 0 64px}
+  .prop:nth-child(even) .media{order:-1}
+  .pname{margin:0 0 14px;font-size:clamp(26px,4vw,38px);font-weight:700;letter-spacing:-.01em}
+  .pdesc{margin:0 0 24px;font-size:15.5px;line-height:1.65;color:var(--muted)}
+  .airbnb{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:14.5px;
+    color:#fff;background:var(--airbnb);padding:12px 20px;border-radius:12px;
+    box-shadow:0 6px 22px rgba(255,56,92,.25);transition:transform .15s,box-shadow .15s}
+  .airbnb:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(255,56,92,.35)}
+  .media{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;
+    border:0.5px solid var(--border);background:#0a0f1a;cursor:pointer}
+  .media img{width:100%;height:100%;object-fit:cover;display:block}
+  .media iframe{width:100%;height:100%;border:0;display:block}
+  .media .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    background:rgba(5,7,13,0.12);transition:background .15s}
+  .media:hover .play{background:rgba(5,7,13,0.02)}
+  .media .play svg{width:66px;height:66px;filter:drop-shadow(0 3px 10px rgba(0,0,0,.4))}
+  footer{margin-top:40px;font-size:12px;color:rgba(141,162,201,.6)}
+  @media(max-width:720px){
+    .prop{grid-template-columns:1fr;gap:18px;margin-bottom:48px}
+    .prop:nth-child(even) .media{order:0}
+  }
+</style>
+</head>
+<body>
+<div class="sky"></div>
+<main class="wrap">
+  <a class="back" href="/">&larr; Ethan Vera</a>
+  <h1 style="margin:0 0 48px">Real Estate <span class="grad">Portfolio</span></h1>
+
+  <article class="prop">
+    <div class="text">
+      <h2 class="pname">Forum</h2>
+      <p class="pdesc">Located in the neighbourhood of Pocitos, Forum has unique views of the promenade,
+         the sea and the central gardens from all apartments. It is the most unique structure in all of
+         Uruguay. Designed by the Carlos Ott Arquitectos studio in association with Carlos Ponce de Le&oacute;n
+         Arquitectos.</p>
+      <a class="airbnb" href="https://airbnb.com/h/forumpuertodelbuceo" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5c-1.6 0-2.9 1-3.9 3C5 11 3.3 14.9 3.3 17.4 3.3 20 5.1 22 7.6 22c1.6 0 3.1-.9 4.4-2.6C13.3 21.1 14.8 22 16.4 22c2.5 0 4.3-2 4.3-4.6 0-2.5-1.7-6.4-4.8-12.9-1-2-2.3-3-3.9-3Zm0 2c.7 0 1.4.6 2.1 2C17 11.7 18.7 15.4 18.7 17.4c0 1.5-1 2.6-2.3 2.6-1.2 0-2.5-1-3.7-2.9l-.7-1.1-.7 1.1C10.1 19 8.8 20 7.6 20c-1.3 0-2.3-1.1-2.3-2.6 0-2 1.7-5.7 4.6-11.9.7-1.4 1.4-2 2.1-2Z"/></svg>
+        View on Airbnb</a>
+    </div>
+    <div class="media" data-id="uCsJggzwqnk" role="button" tabindex="0" aria-label="Play Forum video">
+      <img src="https://i.ytimg.com/vi/uCsJggzwqnk/maxresdefault.jpg"
+           onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/uCsJggzwqnk/hqdefault.jpg'"
+           alt="Forum Puerto del Buceo"/>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8.6 8.6 0 0 0-6-6C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7a8.6 8.6 0 0 0-6 6A90 90 0 0 0 0 24a90 90 0 0 0 1.5 16.3 8.6 8.6 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.6 8.6 0 0 0 6-6A90 90 0 0 0 68 24a90 90 0 0 0-1.5-16.3Z" fill="#f00"/><path d="M27 34.5 45 24 27 13.5Z" fill="#fff"/></svg></span>
+    </div>
+  </article>
+
+  <article class="prop">
+    <div class="text">
+      <h2 class="pname">Nostrum Bay</h2>
+      <p class="pdesc">Located downtown with amazing views of Montevideo port, Nostrum Bay stands 26 stories
+         tall. It is one of the tallest buildings in Montevideo and all of Uruguay. Designed by renowned
+         architects Carlos Ott and Carlos Ponce de Le&oacute;n.</p>
+      <a class="airbnb" href="https://airbnb.com/h/nostrumbay" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5c-1.6 0-2.9 1-3.9 3C5 11 3.3 14.9 3.3 17.4 3.3 20 5.1 22 7.6 22c1.6 0 3.1-.9 4.4-2.6C13.3 21.1 14.8 22 16.4 22c2.5 0 4.3-2 4.3-4.6 0-2.5-1.7-6.4-4.8-12.9-1-2-2.3-3-3.9-3Zm0 2c.7 0 1.4.6 2.1 2C17 11.7 18.7 15.4 18.7 17.4c0 1.5-1 2.6-2.3 2.6-1.2 0-2.5-1-3.7-2.9l-.7-1.1-.7 1.1C10.1 19 8.8 20 7.6 20c-1.3 0-2.3-1.1-2.3-2.6 0-2 1.7-5.7 4.6-11.9.7-1.4 1.4-2 2.1-2Z"/></svg>
+        View on Airbnb</a>
+    </div>
+    <div class="media" data-id="g3xiQTWlq3I" role="button" tabindex="0" aria-label="Play Nostrum Bay video">
+      <img src="https://i.ytimg.com/vi/g3xiQTWlq3I/maxresdefault.jpg"
+           onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/g3xiQTWlq3I/hqdefault.jpg'"
+           alt="Nostrum Bay"/>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8.6 8.6 0 0 0-6-6C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7a8.6 8.6 0 0 0-6 6A90 90 0 0 0 0 24a90 90 0 0 0 1.5 16.3 8.6 8.6 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.6 8.6 0 0 0 6-6A90 90 0 0 0 68 24a90 90 0 0 0-1.5-16.3Z" fill="#f00"/><path d="M27 34.5 45 24 27 13.5Z" fill="#fff"/></svg></span>
+    </div>
+  </article>
+
+  <article class="prop">
+    <div class="text">
+      <h2 class="pname">Andes City</h2>
+      <p class="pdesc">Located in the Barrio Centro, the Andes City project is one block from the main avenue
+         of Montevideo, next to the Plaza Independencia and just steps from the Sol&iacute;s theater, the Sodre
+         national auditorium and the Sala Verdi, among many other cultural centers and museums.</p>
+      <a class="airbnb" href="https://airbnb.com/h/andescity" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5c-1.6 0-2.9 1-3.9 3C5 11 3.3 14.9 3.3 17.4 3.3 20 5.1 22 7.6 22c1.6 0 3.1-.9 4.4-2.6C13.3 21.1 14.8 22 16.4 22c2.5 0 4.3-2 4.3-4.6 0-2.5-1.7-6.4-4.8-12.9-1-2-2.3-3-3.9-3Zm0 2c.7 0 1.4.6 2.1 2C17 11.7 18.7 15.4 18.7 17.4c0 1.5-1 2.6-2.3 2.6-1.2 0-2.5-1-3.7-2.9l-.7-1.1-.7 1.1C10.1 19 8.8 20 7.6 20c-1.3 0-2.3-1.1-2.3-2.6 0-2 1.7-5.7 4.6-11.9.7-1.4 1.4-2 2.1-2Z"/></svg>
+        View on Airbnb</a>
+    </div>
+    <div class="media" data-id="oh0fIujoBvg" role="button" tabindex="0" aria-label="Play Andes City video">
+      <img src="https://i.ytimg.com/vi/oh0fIujoBvg/maxresdefault.jpg"
+           onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/oh0fIujoBvg/hqdefault.jpg'"
+           alt="Andes City"/>
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8.6 8.6 0 0 0-6-6C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7a8.6 8.6 0 0 0-6 6A90 90 0 0 0 0 24a90 90 0 0 0 1.5 16.3 8.6 8.6 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.6 8.6 0 0 0 6-6A90 90 0 0 0 68 24a90 90 0 0 0-1.5-16.3Z" fill="#f00"/><path d="M27 34.5 45 24 27 13.5Z" fill="#fff"/></svg></span>
+    </div>
+  </article>
+
+  <footer>&copy; <span id="yr"></span> Ethan Vera</footer>
+</main>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  document.querySelectorAll('.media').forEach(function(v){
+    function play(){
+      var id=v.getAttribute('data-id');
+      v.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0" '+
+        'title="Property video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    }
+    v.addEventListener('click',play);
+    v.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();play();}});
+  });
+</script>
+</body>
+</html>
